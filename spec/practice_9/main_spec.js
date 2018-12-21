@@ -6,10 +6,10 @@ import sinonChai from "sinon-chai";
 const expect = chai.expect;
 chai.use(sinonChai);
 
-import Person from "../../main/practice_9/person.js";
-import Student from "../../main/practice_9/student.js";
-import Teacher from "../../main/practice_9/teacher.js";
-import Class from "../../main/practice_9/class.js";
+import {Person} from "../../main/practice_9/person.js";
+import {Student} from "../../main/practice_9/student.js";
+import {Teacher} from "../../main/practice_9/teacher.js";
+import {Class} from "../../main/practice_9/class.js";
 
 describe("Person", () => {
     it("should have field name and age", () => {
@@ -137,11 +137,12 @@ describe("Class", () => {
             const otherKlass = new Class(3);
             const student = new Student(1, "Jerry", 21, otherKlass);
 
-            klass.assignLeader(student);
+            const result = klass.assignLeader(student);
 
             expect(klass.leader).not.equal(student);
-            //expect(console.log.getCall(0).args[0]).to.equal("It is not one of us."); //assert style 2.
+            // expect(console.log.getCall(0).args[0]).to.equal("It is not one of us."); //assert style 2.
             expect(spy.calledWith("It is not one of us.")).to.be.ok;
+            // expect(result).to.equal("It is not one of us.");
         });
     });
 
