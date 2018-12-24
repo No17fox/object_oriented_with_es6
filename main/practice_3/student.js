@@ -20,4 +20,4 @@ class Student extends Person {
   }
 }
 
-export {Student};
+export default Student;

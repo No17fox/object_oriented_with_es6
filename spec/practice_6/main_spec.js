@@ -4,9 +4,9 @@ import sinonChai from "sinon-chai";
 const expect = chai.expect;
 chai.use(sinonChai);
 
-import {Person} from "../../main/practice_6/person.js";
-import {Student} from "../../main/practice_6/student.js";
-import {Teacher} from "../../main/practice_6/teacher.js";
+import Person from "../../main/practice_6/person.js";
+import Student from "../../main/practice_6/student.js";
+import Teacher from "../../main/practice_6/teacher.js";
 
 
 describe("Person", () => {

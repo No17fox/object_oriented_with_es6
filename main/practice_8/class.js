@@ -12,4 +12,4 @@ class Class {
   }
 }
 
-export {Class};
+export default Class;

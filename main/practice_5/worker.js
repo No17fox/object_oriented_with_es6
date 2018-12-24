@@ -15,4 +15,4 @@ class Worker extends Person {
   }
 }
 
-export {Worker};
+export default Worker;
