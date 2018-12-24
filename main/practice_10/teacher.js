@@ -9,7 +9,7 @@ class Teacher extends Person {
   introduce() {
     if (this.klasses) {
       let classNumber = this.klasses.map(klass => klass.number).join(', ')
-      return (super.introduce() + ' I am a Teacher. I teach Class ' + classNumber + '.');
+      return (super.introduce() + ` I am a Teacher. I teach Class ${classNumber}.`);
     } else {
       return (super.introduce() + ' I am a Teacher. I teach No Class.');      
     }

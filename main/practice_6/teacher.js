@@ -8,7 +8,7 @@ class Teacher extends Person {
 
   introduce() {
     if (this.klass) {
-      return (super.introduce() + ' I am a Teacher. I teach Class ' + this.klass + '.');
+      return (super.introduce() + ` I am a Teacher. I teach Class ${this.klass}.`);
     } else {
       return (super.introduce() + ' I am a Teacher. I teach No Class.');      
     }
